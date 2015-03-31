@@ -1,0 +1,17 @@
+{
+  "uuid": "44bd4fde-706c-4856-b61e-665fd25d1af0",
+  "shortName": "Digitally Simple",
+  "longName": "Digitally Simple",
+  "companyName": "Andrew Hutchings",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
