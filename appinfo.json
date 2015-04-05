@@ -8,8 +8,8 @@
   "resources": {
     "media": [
       {
-        "file": "fonts/PTM55F.ttf",
-        "name": "FONT_TIME_36",
+        "file": "fonts/PTM75F.ttf",
+        "name": "FONT_TIME_38",
         "type": "font"
       },
       {

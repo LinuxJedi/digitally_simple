@@ -58,7 +58,7 @@ static void handle_tick(struct tm* tick_time, TimeUnits units_changed)
 
   if (units_changed & SECOND_UNIT)
   {
-    strftime(seconds, sizeof(seconds), ":%S", tick_time);
+    strftime(seconds, sizeof(seconds), "%S", tick_time);
     text_layer_set_text(seconds_layer, seconds);
   }
   if ((units_changed & MINUTE_UNIT) || first_second)
@@ -131,14 +131,14 @@ static void window_load(Window *window)
   APP_LOG(APP_LOG_LEVEL_DEBUG, "Watchface init");
   Layer *window_layer= window_get_root_layer(window);
   window_set_background_color(window, GColorBlack);
-  GFont time_font= fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TIME_36));
+  GFont time_font= fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TIME_38));
   GFont seconds_font= fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_TIME_16));
   GFont date_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_DATE_22));
   GFont status_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_STATUS_12));
   GFont icon_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ICONS_14));
 
   // Hour / Minute
-  time_layer= text_layer_create(GRect(2, 38, 112, 55));
+  time_layer= text_layer_create(GRect(2, 38, 118, 55));
   text_layer_set_text_alignment(time_layer, GTextAlignmentLeft);
   text_layer_set_font(time_layer, time_font);
   text_layer_set_text_color(time_layer, GColorWhite);
@@ -146,7 +146,7 @@ static void window_load(Window *window)
   layer_add_child(window_layer, text_layer_get_layer(time_layer));
 
   // Seconds
-  seconds_layer= text_layer_create(GRect(114, 57, 30, 20));
+  seconds_layer= text_layer_create(GRect(120, 60, 30, 20));
   text_layer_set_text_alignment(seconds_layer, GTextAlignmentLeft);
   text_layer_set_font(seconds_layer, seconds_font);
   text_layer_set_text_color(seconds_layer, GColorWhite);
