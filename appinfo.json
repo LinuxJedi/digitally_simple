@@ -5,13 +5,44 @@
   "companyName": "Andrew Hutchings",
   "versionCode": 1,
   "versionLabel": "1.0",
+  "resources": {
+    "media": [
+      {
+        "file": "fonts/PTM55F.ttf",
+        "name": "FONT_TIME_36",
+        "type": "font"
+      },
+      {
+        "file": "fonts/PTM55F.ttf",
+        "name": "FONT_TIME_16",
+        "type": "font"
+      },
+      {
+        "file": "fonts/PTM55F.ttf",
+        "name": "FONT_DATE_22",
+        "type": "font"
+      },
+      {
+        "file": "fonts/PTM55F.ttf",
+        "name": "FONT_STATUS_12",
+        "type": "font"
+      },
+      {
+        "file": "fonts/ionicons.ttf",
+        "name": "FONT_ICONS_14",
+        "type": "font"
+      }
+    ]
+  },
   "watchapp": {
     "watchface": true
   },
   "appKeys": {
     "dummy": 0
   },
-  "resources": {
-    "media": []
-  }
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }
